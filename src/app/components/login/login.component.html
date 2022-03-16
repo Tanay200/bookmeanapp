@@ -1,0 +1,21 @@
+<main class="form-signin">
+  <form (submit)="onLoginSubmit()">
+    <h1 class="h3 mb-3 fw-normal">Please Log in</h1>
+    <div class="form-floating">
+      <input type="text" [(ngModel)]="username" class="form-control" name="username">
+      <label for="floatingInput">Username</label>
+    </div>
+    <br>
+    <div class="form-floating">
+      <input type="password" [(ngModel)]="password" class="form-control" name="password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
